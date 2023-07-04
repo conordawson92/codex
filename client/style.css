@@ -172,7 +172,24 @@ color: #14221e;
 }
 #banner img {
   height: 60px;
+
 }
 .inv {
   transform: scaleX(-1);
+}
+
+.image-container img {
+  animation: moveUpDown .1s ease-in-out infinite; /* Adjust the animation duration (3s) as needed */
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* Adjust this value to control the amount of movement */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
